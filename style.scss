@@ -1,0 +1,19 @@
+body {
+  background: #373a3c;
+}
+
+nav {
+  display: flex;
+
+  .menu-item {
+    display: inline-flex;
+    margin: 7px;
+  }
+
+  .menu-item-link {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin: 6px;
+    font-size: 18px;
+  }
+}
