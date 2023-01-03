@@ -4,47 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="./images/xbox-fav.ico" />
-
-    <title>Xbox Landing page</title>
+    <title>Xbox landing page</title>
+    <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img src="./images/xbox-icon.svg" alt="xbox icon" />
+    <div class="wrapper">
+      <!-- Navbar -->
+      <header class="navbar">
+        <div class="navbar-logo">
+          <img src="./resource/xboxlogo.webp" alt="" />
         </div>
-        <div class="menu">
-          <div class="menu-item">
-            <a class="menu-item-link">Games</a>
-            <img src="./images/dropdown-arrow.svg" alt="dropdown arrow" />
-          </div>
+        <nav class="navbar-menu">
+          <ul>
+            <li>
+              <a href="#" class="navbar-menu__links"
+                >Games<img src="./resource/down-arrow.webp"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="navbar-menu__links"
+                >Consoles<img src="./resource/down-arrow.webp"
+              /></a>
+            </li>
+            <li><a href="#" class="navbar-menu__links">Community</a></li>
+          </ul>
+        </nav>
+        <div class="navbar-search">
+          <input
+            type="search"
+            class="navbar-search__field"
+            placeholder="Search"
+          />
+        </div>
+        <div class="navbar-user-account">
+          <img
+            class="navbar-user-account__icon"
+            src="./resource/user.webp"
+            alt=""
+          />
+          <a href="#" class="navbar-menu__links"
+            >My XBOX<img src="./resource/down-arrow.webp"
+          /></a>
+        </div>
+      </header>
 
-          <div class="menu-item">
-            <a class="menu-item-link">Consoles</a>
-            <img src="./images/dropdown-arrow.svg" alt="dropdown arrow" />
-          </div>
-          <div class="menu-item">
-            <a class="menu-item-link">Community</a>
-          </div>
-        </div>
-        <div class="search-field">
-          <input type="search" placeholder="Search" />
-        </div>
-        <div class="menu-item">
-          <img src="./images/user-icon.svg" alt="user icon" />
-          <a class="menu-item-link">My XBOX</a>
-          <img src="./images/dropdown-arrow.svg" alt="dropdown arrow" />
-        </div>
-      </nav>
-    </header>
-
-    <section class="featured"></section>
-    <section class="benefits"></section>
-    <section class="cross-sale-items"></section>
-    <section class="design-lab"></section>
-    <section class="bottom-menu"></section>
-    <footer></footer>
+      <main>
+        <!-- Hero -->
+        <div class="hero"></div>
+      </main>
+    </div>
   </body>
 </html>
