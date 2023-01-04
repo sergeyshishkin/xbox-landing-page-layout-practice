@@ -12,49 +12,50 @@
       <!-- Navbar -->
 
       <!-- Arrow should be in html/css https://www.w3schools.com/howto/howto_css_arrows.asp  -->
-      <header class="navbar">
-        <div class="navbar-logo">
-          <img src="./resource/xboxlogo.webp" alt="" />
-        </div>
-        <nav class="navbar-menu">
-          <ul>
+      <header class="header-nav">
+        <img class="header-nav__logo" src="./resource/xboxlogo.webp" alt="" />
+        <nav>
+          <ul class="header-nav__menu">
             <li>
-              <a href="#" class="navbar-menu__links">Games</a>
+              <a href="#" class="header-nav__menu-links">Games</a>
             </li>
             <li>
-              <a href="#" class="navbar-menu__links">Consoles</a>
+              <a href="#" class="header-nav__menu-links">Consoles</a>
             </li>
-            <li><a href="#" class="navbar-menu__links">Community</a></li>
+            <li>
+              <a href="#" class="header-nav__menu-links">Community</a>
+            </li>
           </ul>
         </nav>
-        <div class="navbar-search">
-          <input
-            type="search"
-            class="navbar-search__field"
-            placeholder="Search"
-          />
+        <div class="header-nav-search">
+          <input type="search" class="search-field" placeholder="Search" />
         </div>
-        <div class="navbar-user-account">
+        <div class="header-nav-user-account">
           <img
-            class="navbar-user-account__icon"
+            class="header-nav-user-account__icon"
             src="./resource/user.webp"
             alt=""
           />
-          <a href="#" class="navbar-menu__links">My XBOX</a>
+          <a href="#" class="header-nav__menu-links">My XBOX</a>
         </div>
       </header>
 
       <main>
         <!-- Hero -->
-        <div class="hero" style="background-color: #f5f5f5"></div>
+        <div class="hero" style="background-color: #f5f5f5; height: 50px">
+          <p style="text-align: center; margin: 0; padding-top: 15px">
+            Here will be slider
+          </p>
+        </div>
 
         <!-- Features -->
         <div class="features" style="background-color: #373a3c">
-          <img src="./resource/xboxgreyicon.webp" alt="" class="xboxlogo" />
-          <h2>
-            The best value<br />
-            in games and entertainment
-          </h2>
+          <img
+            src="./resource/xboxgreyicon.webp"
+            alt=""
+            class="features__xboxlogo"
+          />
+          <h2>The best value in games and entertainment</h2>
           <div class="features-cards">
             <div class="card"></div>
             <div class="card"></div>
@@ -73,45 +74,62 @@
           </div>
           <button href="#">XBOX Store</button>
         </div>
+
         <!-- Design Lab -->
         <div class="designlab">
-          <h2>Xbox Design Lab</h2>
-          <p>
-            Make yours one in a billion with new colors, metallic finishes and
-            rubberized grips.
-          </p>
+          <div class="designlab__content">
+            <h2 class="designlab__heading">Xbox Design Lab</h2>
+            <p class="designlab__text">
+              Make yours one in a billion with new colors,<br />
+              metallic finishes and rubberized gripS.
+            </p>
+            <button href="#" type="button" class="secondary-button">
+              Design Yours
+            </button>
+            <button href="#" type="button" class="primary-button">
+              Explore Consoles &amp; Accessories
+            </button>
+          </div>
         </div>
+
         <!-- Footer -->
       </main>
       <div class="footer">
-        <div class="footer-links">
-          <div class="footer-links-column">
-            <p class="footer-column-heading">XBOX</p>
+        <div class="footer__links">
+          <div class="footer-column">
+            <h3 class="footer-column__heading">XBOX</h3>
             <ul>
-              <li><a href="#"></a>Support</li>
-              <li><a href="#"></a>Contact us</li>
-              <li><a href="#"></a>Privacy &amp; cookies</li>
-              <li><a href="#"></a>Terms of use</li>
+              <li><a href="#" class="footer-text-link">Support</a></li>
+              <li><a href="#" class="footer-text-link">Contact us</a></li>
+              <li>
+                <a href="#" class="footer-text-link">Privacy &amp; cookies</a>
+              </li>
+              <li><a href="#" class="footer-text-link">Terms of use</a></li>
             </ul>
           </div>
-          <div class="footer-links-column">
-            <p class="footer-column-heading">Developers</p>
+          <div class="footer-column">
+            <h3 class="footer-column__heading">Developers</h3>
             <ul>
-              <li><a href="#"></a>Games</li>
-              <li><a href="#"></a>Windows 10</li>
-              <li><a href="#"></a>Creators Program</li>
-              <li><a href="#"></a>Designed for XBOX</li>
+              <li><a href="#" class="footer-text-link">Games</a></li>
+              <li><a href="#" class="footer-text-link">Windows 10</a></li>
+              <li><a href="#" class="footer-text-link">Creators Program</a></li>
+              <li>
+                <a href="#" class="footer-text-link">Designed for XBOX</a>
+              </li>
             </ul>
           </div>
-          <div class="footer-links-column">
-            <p class="footer-column-heading">Follow Us</p>
+          <div class="footer-column-social">
+            <h3 class="footer-column__heading-social">Follow Us</h3>
+            <img src="./resource/fb.webp" class="social-icon" alt="" />
+            <img src="./resource/tw.webp" class="social-icon" alt="" />
+            <img src="./resource/ig.webp" class="social-icon" alt="" />
           </div>
         </div>
         <div class="copyright">
-          <hr />
-          <div class="copyright-text">
-            <p>English (United States)</p>
-            <p>© Microsoft 2017</p>
+          <hr class="copyright__divider" />
+          <div class="copyright-content">
+            <p class="copyright-content__text">English (United States)</p>
+            <p class="copyright-content__text">© Microsoft 2017</p>
           </div>
         </div>
       </div>

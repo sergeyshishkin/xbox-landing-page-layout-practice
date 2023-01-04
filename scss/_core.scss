@@ -19,9 +19,11 @@ html {
 /**
  * Remove the margin in all browsers.
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 /**
@@ -353,4 +355,28 @@ template {
 h2 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+$primarycolor: #8dd83d;
+$secondarycolor: #373a3c;
+
+@mixin arrow($rotation) {
+  border: solid $primarycolor;
+  border-width: 0 3px 3px 0;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate($rotation);
+  -webkit-transform: rotate($rotation);
+}
+
+.button {
+  background-color: $primarycolor;
+  width: 278px;
+  height: 60px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 0 0;
 }

@@ -9,53 +9,41 @@ body {
 
 // Navbar
 
-.navbar {
+.header-nav {
   display: flex;
   justify-content: space-between;
   background-color: #373a3c;
   border-bottom: 3px solid #979797;
 }
 
-.navbar-logo {
+.header-nav__logo {
   align-self: center;
   padding-left: 162px;
-
-  img {
-    width: 96px;
-    height: 29px;
-    align-items: center;
-  }
+  width: 96px;
+  height: 29px;
+  align-items: center;
 }
 
-.navbar-menu {
+.header-nav__menu {
   align-self: center;
   padding-left: 288px;
-}
-
-.navbar-menu ul {
-  padding-left: 0px;
-}
-.navbar-menu li {
   display: inline-flex;
+  list-style-type: none;
+}
+
+.header-nav__menu-links {
   padding: 0 9px;
-}
-
-.navbar-menu__links {
   color: #fff;
+  font-size: 16px;
+  opacity: 0.5;
+  text-decoration: none;
 }
 
-.navbar-search {
+.header-nav-search {
   align-self: center;
 }
 
-.navbar-search__field {
-  width: 210px;
-  padding: 5px 10px;
-  border-radius: 4px;
-  border: 1px solid #cccccc;
-}
-
-.navbar-user-account {
+.header-nav-user-account {
   display: inline-flex;
   align-self: center;
   padding-right: 162px;
@@ -67,21 +55,6 @@ body {
 }
 
 // Hero
-
-.hero {
-  display: flex;
-  background-color: #f5f5f5;
-  padding: 32px 62px;
-  .hero-text {
-    flex-basis: 50%;
-    flex-shrink: 0;
-  }
-
-  .hero-image {
-    flex-basis: 50%;
-    flex-shrink: 1;
-  }
-}
 
 // Features
 
@@ -100,19 +73,37 @@ body {
 // Design Lab
 
 // background-color is radial gradient, check figma
+
 .designlab {
-  background-image: url("/resource/xboxlab.webp");
-  background-repeat: no-repeat;
+  display: flex;
+  // top, gradient
+  background: linear-gradient(rgba(141, 216, 61, 0.1), rgba(141, 216, 61, 0.1)),
+    // bottom, image
+    url("/resource/xboxlab.webp") no-repeat;
+
   height: 480px;
 }
 
-// Footer
-.footer-links {
-  display: flex;
-  justify-content: space-evenly;
+.designlab__content {
+  padding-top: 121px;
+  padding-bottom: 145px;
+  padding-left: 165px;
 }
 
-.copyright-text {
-  display: flex;
-  justify-content: space-between;
+.designlab__heading {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 400;
 }
+
+.designlab__text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 39px;
+  margin-top: 15px;
+}
+
+// Footer
+
+@import "footer";

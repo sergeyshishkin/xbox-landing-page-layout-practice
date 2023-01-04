@@ -1,5 +1,27 @@
+.search-field {
+  width: 210px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+}
+
 .card {
   width: 320px;
   height: 420px;
-  border: 1px solid #8dd83d;
+  border: 1px solid $primarycolor;
+}
+
+.arrow-down {
+  @include arrow(45deg);
+}
+
+.primary-button {
+  @extend .button;
+}
+
+.secondary-button {
+  @extend .button;
+  width: 207px;
+  background: linear-gradient(180deg, #686c6f, #373a3c);
+  margin-right: 15px;
 }
