@@ -5,7 +5,6 @@ body {
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  background-color: #373a3c;
 }
 
 // Navbar
@@ -13,7 +12,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: #373a3c;
   border-bottom: 3px solid #979797;
 }
 
@@ -82,4 +81,38 @@ body {
     flex-basis: 50%;
     flex-shrink: 1;
   }
+}
+
+// Features
+
+.features-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+// Exclusive
+
+.exclusive-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+// Design Lab
+
+// background-color is radial gradient, check figma
+.designlab {
+  background-image: url("/resource/xboxlab.webp");
+  background-repeat: no-repeat;
+  height: 480px;
+}
+
+// Footer
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copyright-text {
+  display: flex;
+  justify-content: space-between;
 }

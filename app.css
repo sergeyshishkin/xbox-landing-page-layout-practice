@@ -317,6 +317,11 @@ template {
   display: none;
 }
 
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 body {
   background-color: #fff;
 }
@@ -324,13 +329,12 @@ body {
 .wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  background-color: #373a3c;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: #373a3c;
   border-bottom: 3px solid #979797;
 }
 
@@ -396,4 +400,36 @@ body {
 .hero .hero-image {
   flex-basis: 50%;
   flex-shrink: 1;
+}
+
+.features-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.exclusive-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.designlab {
+  background-image: url("/resource/xboxlab.webp");
+  background-repeat: no-repeat;
+  height: 480px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copyright-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 320px;
+  height: 420px;
+  border: 1px solid #8dd83d;
 }/*# sourceMappingURL=app.css.map */
