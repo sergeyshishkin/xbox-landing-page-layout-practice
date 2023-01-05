@@ -1,0 +1,31 @@
+// Design Lab
+
+.designlab {
+  display: flex;
+  // top, gradient
+  background: linear-gradient(rgba(141, 216, 61, 0.1), rgba(141, 216, 61, 0.1)),
+    // bottom, image
+    url("/resource/xboxlab.webp") no-repeat;
+
+  height: 480px;
+}
+
+.designlab__content {
+  padding-top: 121px;
+  padding-bottom: 145px;
+  padding-left: 165px;
+}
+
+.designlab__heading {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.designlab__text {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 39px;
+  margin-top: 15px;
+}

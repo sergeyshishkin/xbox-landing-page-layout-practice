@@ -6,9 +6,44 @@
 }
 
 .card {
-  width: 320px;
-  height: 420px;
+  width: 318px;
+  height: 418px;
   border: 1px solid $primarycolor;
+  background-color: #ffffff;
+
+  .card__image {
+    width: 318px;
+    height: 180px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+
+    & img {
+      align-self: center;
+    }
+  }
+
+  .card__text {
+    margin-left: 22px;
+    margin-top: 26px;
+
+    .card__title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #435766;
+      font-size: 18px;
+    }
+    .card__description {
+      margin: 0;
+      color: #435766;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  .card__button {
+    @extend .button;
+    margin-left: 20px;
+  }
 }
 
 .arrow-down {
