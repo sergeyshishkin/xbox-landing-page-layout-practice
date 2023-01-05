@@ -324,7 +324,7 @@ h2 {
   margin-bottom: 0;
 }
 
-.button, .secondary-button, .primary-button, .card .card__button {
+.button, .secondary-button, .designlab-secondary-button, .primary-button, .designlab-primary-button, .card .card__button {
   display: block;
   background-color: #8dd83d;
   width: 278px;
@@ -391,6 +391,10 @@ body {
   height: 20px;
 }
 
+.hero__image {
+  display: flex;
+}
+
 .features {
   background: radial-gradient(#686c6f, #373a3c);
 }
@@ -453,6 +457,14 @@ body {
   font-weight: 400;
   margin-bottom: 39px;
   margin-top: 15px;
+}
+
+.designlab-secondary-button {
+  display: inline-block;
+}
+
+.designlab-primary-button {
+  display: inline-block;
 }
 
 .footer {
@@ -577,7 +589,7 @@ body {
   -webkit-transform: rotate(45deg);
 }
 
-.secondary-button {
+.secondary-button, .designlab-secondary-button {
   width: 207px;
   background: linear-gradient(180deg, #686c6f, #373a3c);
   margin-right: 15px;

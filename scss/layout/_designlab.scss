@@ -29,3 +29,12 @@
   margin-bottom: 39px;
   margin-top: 15px;
 }
+
+.designlab-secondary-button {
+  @extend .secondary-button;
+  display: inline-block;
+}
+.designlab-primary-button {
+  @extend .primary-button;
+  display: inline-block;
+}

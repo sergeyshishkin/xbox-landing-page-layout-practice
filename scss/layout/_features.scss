@@ -1,0 +1,35 @@
+// Features
+
+.features {
+  background: radial-gradient(#686c6f, #373a3c);
+}
+
+.features__heading {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+.features__xboxlogo {
+  align-self: center;
+}
+
+.features__tagline {
+  align-self: center;
+  text-align: center;
+  margin-top: 24px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 36px;
+
+  .features__tagline-emphasize {
+    font-size: 46px;
+  }
+}
+
+.features-cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 43px;
+  padding-bottom: 162px;
+}
